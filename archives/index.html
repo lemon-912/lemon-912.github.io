@@ -186,7 +186,53 @@
       </div>
       <div class="article-entry">
         
-          
+          <h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">markdown语法</span><br><span class="line"><span class="title class_">Ctrl</span> + <span class="number">2</span>  ==&gt; h2 </span><br></pre></td></tr></table></figure>
+
+<h3 id="1-splice"><a href="#1-splice" class="headerlink" title="1. splice"></a>1. splice</h3><ol>
+<li>删除元素 <code>arr.splice(起始位置， 要删除的个数)</code></li>
+<li>添加元素  <code>arr.splice(起始位置， 删除个数，要添加的元素)</code></li>
+<li>注意： splice会改变原数组 </li>
+</ol>
+<h3 id="2-let-const"><a href="#2-let-const" class="headerlink" title="2. let - const"></a>2. let - const</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">const</span> 声明之后一定要赋值</span><br><span class="line"><span class="number">2.</span> <span class="keyword">const</span> 声明的变量的值如果是引用类型，栈里面存的是地址， 指向堆空间中的数据。</span><br><span class="line"><span class="number">3.</span> 如果是引用类型， 不能直接赋值。</span><br><span class="line"><span class="number">4.</span> 如果声明数组对象，建议使用<span class="keyword">const</span></span><br><span class="line"><span class="number">5.</span> 当声明的值要发生改变的时候， 可以用<span class="keyword">let</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-WebAPI"><a href="#3-WebAPI" class="headerlink" title="3. WebAPI"></a>3. WebAPI</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">文档： <span class="variable language_">document</span>， 一个页面就是一个文档</span><br><span class="line">元素： element  页面上所有的标签都叫做元素</span><br><span class="line">节点： node 页面上所有的内容都叫节点  元素节点  文本节点 属性节点 注释节点</span><br><span class="line"><span class="variable language_">document</span> -&gt; 它是一个页面里面的顶级对象</span><br><span class="line"></span><br><span class="line"><span class="variable constant_">DOM</span>：<span class="variable language_">document</span> object model 文档对象模型   把我们的页面当作一个对象来看待</span><br><span class="line"><span class="variable constant_">BOM</span>：browser object model 把我们的浏览器当作一个对象来看待</span><br><span class="line"></span><br><span class="line"><span class="variable constant_">API</span>： appliation programming interface  应用程序编程接口  ==&gt; 理解为方法。</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-获取元素"><a href="#4-获取元素" class="headerlink" title="4. 获取元素"></a>4. 获取元素</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="variable language_">document</span>.<span class="title function_">querySelector</span>()</span><br><span class="line"><span class="comment">// 获取匹配到的第一个元素  如果没有获取到返回null</span></span><br><span class="line"><span class="comment">// 注意： 类名， ID 一定要加 . #;</span></span><br><span class="line"><span class="number">2.</span> <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>()  </span><br><span class="line"><span class="comment">// 获取匹配到的所有元素集合。</span></span><br><span class="line"><span class="comment">// 返回的是一个伪数组。  不能直接使用，需要下标或者遍历出里面的元素对象才能使用。</span></span><br><span class="line"><span class="number">3.</span> body ==&gt; <span class="variable language_">document</span>.<span class="property">body</span> </span><br><span class="line"><span class="number">4.</span> html ==&gt; <span class="variable language_">document</span>.<span class="property">documentElement</span>   <span class="comment">// 不加括号</span></span><br><span class="line"><span class="comment">//=======================================</span></span><br><span class="line"><span class="number">5.</span> <span class="variable constant_">ID</span>   ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementById</span>() 不需要传#</span><br><span class="line"><span class="number">6.</span> 类名  ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>() 不需要. 返回的是伪数组</span><br><span class="line"><span class="number">7.</span> 标签名 ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>() 伪数组</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-操作元素内容"><a href="#5-操作元素内容" class="headerlink" title="5. 操作元素内容"></a>5. 操作元素内容</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">对象.<span class="property">innerText</span></span><br><span class="line">对象.<span class="property">innerHTML</span> </span><br><span class="line"><span class="comment">// 区别</span></span><br><span class="line">对象.<span class="property">innerHTML</span> 可以识别，解析html标签</span><br><span class="line">对象.<span class="property">innerText</span> 不可以识别，解析html标签</span><br><span class="line"></span><br><span class="line"><span class="comment">// 推荐使用innerHTML </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-操作元素的属性"><a href="#6-操作元素的属性" class="headerlink" title="6. 操作元素的属性"></a>6. 操作元素的属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 获取属性           ==&gt;  对象.属性</span><br><span class="line"><span class="number">2.</span> 设置（修改）属性    ==&gt;  对象.属性 = 值</span><br><span class="line">src title href </span><br></pre></td></tr></table></figure>
+
+<h3 id="7-随机数相关的"><a href="#7-随机数相关的" class="headerlink" title="7. 随机数相关的"></a>7. 随机数相关的</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 获取一个数组的随机下标</span><br><span class="line"><span class="keyword">const</span> i = <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * arr.<span class="property">length</span>)   ==&gt;  [<span class="number">0</span>, arr.<span class="property">length</span> - <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 随机取从n-m的一个数</span><br><span class="line"><span class="keyword">const</span> getRandom = <span class="keyword">function</span>(<span class="params">n, m</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span>  <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (m - n + <span class="number">1</span>)) + n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-样式属性的操作"><a href="#8-样式属性的操作" class="headerlink" title="8. 样式属性的操作"></a>8. 样式属性的操作</h3><ol>
+<li>style   ==&gt; 单个 ， 权重比较高 带单位px</li>
+<li>className  ==&gt; 缺陷， 覆盖原来的类名</li>
+<li>classList   ==&gt; 优秀  , 类名不加点<ol>
+<li>对象.classList.add()</li>
+<li>对象.classList.remove()</li>
+<li>对象.classList.toggle()</li>
+</ol>
+</li>
+</ol>
+<h3 id="9-表单元素的属性"><a href="#9-表单元素的属性" class="headerlink" title="9.  表单元素的属性"></a>9.  表单元素的属性</h3><ul>
+<li>input  textarea </li>
+<li>获取input的值  input.value </li>
+<li>设置input的值 input.value  = 值</li>
+</ul>
+<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">基本数据  <span class="title class_">Number</span> <span class="title class_">String</span> <span class="title class_">Boolean</span> <span class="literal">undefined</span> <span class="literal">null</span> <span class="title class_">Symbol</span> <span class="title class_">BigInt</span></span><br><span class="line">引用类型 <span class="title class_">Object</span> </span><br><span class="line"></span><br><span class="line">基本数据类型存在stack栈里面</span><br><span class="line">引用类型，变量名存在栈里面，存的是一个地址，指向堆heap空间里面的内容</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> 检测基本数据类型 <span class="keyword">typeof</span> </span><br><span class="line"><span class="number">2.</span> 检测引用类型  A <span class="keyword">instanceof</span>（英斯疼斯<span class="keyword">of</span>) B</span><br><span class="line"><span class="number">3.</span> 通用检测数据类型perfect   <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>()</span><br><span class="line"><span class="comment">// 面试题！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="11自定义属性"><a href="#11自定义属性" class="headerlink" title="11自定义属性"></a>11自定义属性</h2><p>在html5中推出的data-自定义属性 </p>
+<p>在标签一律以data-开头</p>
+<p>在DOM对象上一律以dataset对象方式获取</p>
+<h2 id="12定时器间隙函数"><a href="#12定时器间隙函数" class="headerlink" title="12定时器间隙函数"></a>12定时器间隙函数</h2><p>定时器返回的是一个id数字  可以用一个变量存储数字 方便关闭</p>
+<p>开启定时器：</p>
+<p>setInterval(英特无)(函数，间隔时间)</p>
+<p>函数名不要加小括号</p>
+<p>定时器函数也叫回调函数 每到达时间就回调函数执行一次</p>
+<p>关闭定时器：</p>
+<p>clearInterval(变量名)</p>
+
         
       </div>
     </div>
