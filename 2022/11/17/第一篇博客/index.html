@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>第一篇博客 |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-第一篇博客"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  第一篇博客
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/11/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2022-11-17T10:38:11.000Z" itemprop="datePublished">2022-11-17</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">869</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">3 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">markdown语法</span><br><span class="line"><span class="title class_">Ctrl</span> + <span class="number">2</span>  ==&gt; h2 </span><br></pre></td></tr></table></figure>
+
+<h3 id="1-splice"><a href="#1-splice" class="headerlink" title="1. splice"></a>1. splice</h3><ol>
+<li>删除元素 <code>arr.splice(起始位置， 要删除的个数)</code></li>
+<li>添加元素  <code>arr.splice(起始位置， 删除个数，要添加的元素)</code></li>
+<li>注意： splice会改变原数组 </li>
+</ol>
+<h3 id="2-let-const"><a href="#2-let-const" class="headerlink" title="2. let - const"></a>2. let - const</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">const</span> 声明之后一定要赋值</span><br><span class="line"><span class="number">2.</span> <span class="keyword">const</span> 声明的变量的值如果是引用类型，栈里面存的是地址， 指向堆空间中的数据。</span><br><span class="line"><span class="number">3.</span> 如果是引用类型， 不能直接赋值。</span><br><span class="line"><span class="number">4.</span> 如果声明数组对象，建议使用<span class="keyword">const</span></span><br><span class="line"><span class="number">5.</span> 当声明的值要发生改变的时候， 可以用<span class="keyword">let</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-WebAPI"><a href="#3-WebAPI" class="headerlink" title="3. WebAPI"></a>3. WebAPI</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">文档： <span class="variable language_">document</span>， 一个页面就是一个文档</span><br><span class="line">元素： element  页面上所有的标签都叫做元素</span><br><span class="line">节点： node 页面上所有的内容都叫节点  元素节点  文本节点 属性节点 注释节点</span><br><span class="line"><span class="variable language_">document</span> -&gt; 它是一个页面里面的顶级对象</span><br><span class="line"></span><br><span class="line"><span class="variable constant_">DOM</span>：<span class="variable language_">document</span> object model 文档对象模型   把我们的页面当作一个对象来看待</span><br><span class="line"><span class="variable constant_">BOM</span>：browser object model 把我们的浏览器当作一个对象来看待</span><br><span class="line"></span><br><span class="line"><span class="variable constant_">API</span>： appliation programming interface  应用程序编程接口  ==&gt; 理解为方法。</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-获取元素"><a href="#4-获取元素" class="headerlink" title="4. 获取元素"></a>4. 获取元素</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="variable language_">document</span>.<span class="title function_">querySelector</span>()</span><br><span class="line"><span class="comment">// 获取匹配到的第一个元素  如果没有获取到返回null</span></span><br><span class="line"><span class="comment">// 注意： 类名， ID 一定要加 . #;</span></span><br><span class="line"><span class="number">2.</span> <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>()  </span><br><span class="line"><span class="comment">// 获取匹配到的所有元素集合。</span></span><br><span class="line"><span class="comment">// 返回的是一个伪数组。  不能直接使用，需要下标或者遍历出里面的元素对象才能使用。</span></span><br><span class="line"><span class="number">3.</span> body ==&gt; <span class="variable language_">document</span>.<span class="property">body</span> </span><br><span class="line"><span class="number">4.</span> html ==&gt; <span class="variable language_">document</span>.<span class="property">documentElement</span>   <span class="comment">// 不加括号</span></span><br><span class="line"><span class="comment">//=======================================</span></span><br><span class="line"><span class="number">5.</span> <span class="variable constant_">ID</span>   ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementById</span>() 不需要传#</span><br><span class="line"><span class="number">6.</span> 类名  ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>() 不需要. 返回的是伪数组</span><br><span class="line"><span class="number">7.</span> 标签名 ==&gt; <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>() 伪数组</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-操作元素内容"><a href="#5-操作元素内容" class="headerlink" title="5. 操作元素内容"></a>5. 操作元素内容</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">对象.<span class="property">innerText</span></span><br><span class="line">对象.<span class="property">innerHTML</span> </span><br><span class="line"><span class="comment">// 区别</span></span><br><span class="line">对象.<span class="property">innerHTML</span> 可以识别，解析html标签</span><br><span class="line">对象.<span class="property">innerText</span> 不可以识别，解析html标签</span><br><span class="line"></span><br><span class="line"><span class="comment">// 推荐使用innerHTML </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-操作元素的属性"><a href="#6-操作元素的属性" class="headerlink" title="6. 操作元素的属性"></a>6. 操作元素的属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 获取属性           ==&gt;  对象.属性</span><br><span class="line"><span class="number">2.</span> 设置（修改）属性    ==&gt;  对象.属性 = 值</span><br><span class="line">src title href </span><br></pre></td></tr></table></figure>
+
+<h3 id="7-随机数相关的"><a href="#7-随机数相关的" class="headerlink" title="7. 随机数相关的"></a>7. 随机数相关的</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 获取一个数组的随机下标</span><br><span class="line"><span class="keyword">const</span> i = <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * arr.<span class="property">length</span>)   ==&gt;  [<span class="number">0</span>, arr.<span class="property">length</span> - <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 随机取从n-m的一个数</span><br><span class="line"><span class="keyword">const</span> getRandom = <span class="keyword">function</span>(<span class="params">n, m</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span>  <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (m - n + <span class="number">1</span>)) + n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-样式属性的操作"><a href="#8-样式属性的操作" class="headerlink" title="8. 样式属性的操作"></a>8. 样式属性的操作</h3><ol>
+<li>style   ==&gt; 单个 ， 权重比较高 带单位px</li>
+<li>className  ==&gt; 缺陷， 覆盖原来的类名</li>
+<li>classList   ==&gt; 优秀  , 类名不加点<ol>
+<li>对象.classList.add()</li>
+<li>对象.classList.remove()</li>
+<li>对象.classList.toggle()</li>
+</ol>
+</li>
+</ol>
+<h3 id="9-表单元素的属性"><a href="#9-表单元素的属性" class="headerlink" title="9.  表单元素的属性"></a>9.  表单元素的属性</h3><ul>
+<li>input  textarea </li>
+<li>获取input的值  input.value </li>
+<li>设置input的值 input.value  = 值</li>
+</ul>
+<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">基本数据  <span class="title class_">Number</span> <span class="title class_">String</span> <span class="title class_">Boolean</span> <span class="literal">undefined</span> <span class="literal">null</span> <span class="title class_">Symbol</span> <span class="title class_">BigInt</span></span><br><span class="line">引用类型 <span class="title class_">Object</span> </span><br><span class="line"></span><br><span class="line">基本数据类型存在stack栈里面</span><br><span class="line">引用类型，变量名存在栈里面，存的是一个地址，指向堆heap空间里面的内容</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> 检测基本数据类型 <span class="keyword">typeof</span> </span><br><span class="line"><span class="number">2.</span> 检测引用类型  A <span class="keyword">instanceof</span>（英斯疼斯<span class="keyword">of</span>) B</span><br><span class="line"><span class="number">3.</span> 通用检测数据类型perfect   <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>()</span><br><span class="line"><span class="comment">// 面试题！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="11自定义属性"><a href="#11自定义属性" class="headerlink" title="11自定义属性"></a>11自定义属性</h2><p>在html5中推出的data-自定义属性 </p>
+<p>在标签一律以data-开头</p>
+<p>在DOM对象上一律以dataset对象方式获取</p>
+<h2 id="12定时器间隙函数"><a href="#12定时器间隙函数" class="headerlink" title="12定时器间隙函数"></a>12定时器间隙函数</h2><p>定时器返回的是一个id数字  可以用一个变量存储数字 方便关闭</p>
+<p>开启定时器：</p>
+<p>setInterval(英特无)(函数，间隔时间)</p>
+<p>函数名不要加小括号</p>
+<p>定时器函数也叫回调函数 每到达时间就回调函数执行一次</p>
+<p>关闭定时器：</p>
+<p>clearInterval(变量名)</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2022/11/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2022/11/17/hello-world/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Hello World</div>
+      </a>
+    
+  </nav>
+
+  
+   
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2022
+        <i class="ri-heart-fill heart_icon"></i> John Doe
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
